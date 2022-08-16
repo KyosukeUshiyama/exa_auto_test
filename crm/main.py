@@ -14,12 +14,12 @@ from defs import getCustomerInfo
 url = "http://entrylocal.examobile.jp:8080"
 options = webdriver.ChromeOptions()
 options.add_experimental_option("excludeSwitches", ["enable-logging"])
-driver = webdriver.Chrome("C:\\Users\\kyosuke.ushiyama\\AppData\\Local\\SeleniumBasic\\chromedriver.exe")
+driver = webdriver.Chrome("chromedriver.exe")
 driver.get(url)
 #identify挿入画像
-image_file = ("C:\\Users\\kyosuke.ushiyama\\python\\license.jpg")
+image_file = ("img\\chrome_ver.png")
 #エクセル読み取りファイル指定
-book = openpyxl.load_workbook("C:\\Users\\kyosuke.ushiyama\\python\\customer_info.xlsx", data_only=True)
+book = openpyxl.load_workbook("customer_info.xlsx", data_only=True)
 sheet = book["お客様情報"]
 num_of_customers = int(sheet["C1"].value)
 
