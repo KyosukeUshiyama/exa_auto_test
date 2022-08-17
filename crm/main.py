@@ -48,6 +48,7 @@ for i in range(num_of_customers):
 
     #お客様情報入力#
     insertCustomerInfo(elements_info, customer_info, driver)
+    confire_btn = driver.find_element_by_id("confire_btn")
     confire_btn.click()
 
     # /apply/inputページ#
