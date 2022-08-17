@@ -21,7 +21,7 @@ url = "http://entrylocal.examobile.jp:8080/"
 options = webdriver.ChromeOptions()
 options.add_experimental_option("excludeSwitches", ["enable-logging"])
 driver = webdriver.Chrome("C:\\Users\\kyosuke.ushiyama\\AppData\\Local\\SeleniumBasic\\chromedriver.exe", desired_capabilities=capabilities)
-identify挿入画像
+#identify挿入画像
 image_file = ("C:\\Users\\kyosuke.ushiyama\\python\\license.jpg")
 
 def getFileName():
